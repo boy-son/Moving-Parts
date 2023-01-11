@@ -1,0 +1,70 @@
+* {
+
+
+    color: white;
+    background-color: #191919;
+
+
+
+}
+
+h1 {
+    
+    font-size: xx-large;
+    font-weight: bolder;
+
+}
+
+
+
+.modal {
+
+    background-color: #191919;
+    color: white;
+    
+
+}
+
+
+h1 {
+
+    text-align: center;
+
+}
+
+
+
+span {
+
+    color:aqua;
+}
+
+body {
+
+
+    width: 100vw;
+    height: 100vh;
+    background-color: #191919;
+    flex-wrap: wrap;
+
+}
+
+header {
+
+    margin-bottom: 50px;
+    padding: 20px;
+    height:20vh;
+    
+
+}
+
+
+
+.inline-block {
+
+    display:inline-block;
+    float:inline-start;
+
+}
+
+
