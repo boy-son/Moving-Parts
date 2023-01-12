@@ -1,12 +1,17 @@
 .rent {
-    padding: 10px;
-    flex: 0 0 400px;
+    flex: 0 0 200px;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+  }
+  .income {
+    flex: 0 0 200px;
     background-color: #fff;
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
-  }
-  
+}
  .title {
     padding: 20px;
   }
@@ -16,9 +21,12 @@
   }
   
   .image1 {
-    width: 50%;
+    width: 48%;
   }
 
+.image2 {
+width: 48%;   
+}
   .navbar {
  background-color: rgb(220, 254, 254);
   }
@@ -43,4 +51,3 @@
         top: 0;
         margin-top: 10%;
   }
-      
