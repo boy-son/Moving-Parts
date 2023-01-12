@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    
+}
+
+#background-image1 {
+
+
+    background-image: url("../Images/moving-picture.jpg") ;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    margin-bottom: 20px;
+
+    
+
+}
+
+#background-image2 {
+
+    background-image: url("../Images/another-moving-picture.jpg") ;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    margin-top: 20px;
+
+
+}
+
+.container {
+
+    height: 100vh;
+    justify-content: space-between;
+
+}
+
+h1 {
+    
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: center;
+}
+
+
+
+.modal {
+
+    background-color: #191919;
+    color: white;
+    
+
+}
+
+
+h2 {
+
+   font-size: larger;
+   margin-bottom: 5px;
+  
+  
+
+
+}
+
+p {
+
+   
+    padding: 20px;
+
+}
+
+
+
+span {
+
+    color:aqua;
+}
+
+body {
+
+
+    width: 100vw;
+    height: 100vh;
+    background-color: #191919;
+    flex-wrap: wrap;
+
+}
+
+header {
+
+    margin-bottom: 50px;
+    padding: 50px;
+    height:20vh;
+    border-bottom: white solid 5px;
+    justify-content: space-around;
+    
+
+}
+
+nav {
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+
+footer {
+
+    text-align: center;
+    float: inline-end;
+    background-color: #191919;
+    color: white;
+}
+
