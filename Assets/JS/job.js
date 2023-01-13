@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-function getApi() {
+function getJobsApi() {
 
 var searchResult = $("#city-name").val()    
 
@@ -61,6 +61,10 @@ fetch('https://jsearch.p.rapidapi.com/search?query=' + searchResult + '&num_page
 	.then(response => console.log(response))
     .catch(err => console.error(err));
 
+    
+
 }
 
-$("#modal-button").on("click" , getApi)
+$("#modal-button").on("click" , getJobsApi)
+
+
