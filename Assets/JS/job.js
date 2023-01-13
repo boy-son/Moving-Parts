@@ -56,7 +56,7 @@ const options = {
 	}
 };
 
-fetch('https://jsearch.p.rapidapi.com/search?query=' + searchResult + '&num_pages=1', options)
+fetch('https://jsearch.p.rapidapi.com/search?query=' + searchResult + '&num_pages=2', options)
 	.then(response => response.json())
 	.then(response => {
         console.log(response)
