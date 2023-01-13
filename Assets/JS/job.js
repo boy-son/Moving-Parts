@@ -58,10 +58,33 @@ const options = {
 
 fetch('https://jsearch.p.rapidapi.com/search?query=' + searchResult + '&num_pages=1', options)
 	.then(response => response.json())
-	.then(response => console.log(response))
+	.then(response => {
+        console.log(response)
+        anotherFunction(response)  
+    })
     .catch(err => console.error(err));
 
+
+      
+
+}
+
+function anotherFunction(data) {
+    console.log(data)
+
+for (let index = 0; index < data.data.length; index++) {
+	
+	    var listBodyEl = $(".list-body")
+	    var enuMeration = document.createElement("th")
+	    var jobTitle = document.createElement("td")
+	
+	    enuMeration.textContent = index+1
+	    jobTitle.textContent = data.data[index].job_title
+	    listBodyEl.append(enuMeration)
+	    listBodyEl.append(jobTitle)
+}
     
+
 
 }
 
