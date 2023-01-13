@@ -4,6 +4,7 @@
     margin: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
+    background-color: #191919;
     
 }
 
@@ -45,15 +46,6 @@ h1 {
     text-align: center;
 }
 
-
-
-.modal {
-
-    background-color: #191919;
-    color: white;
-    
-
-}
 
 
 h2 {
@@ -113,8 +105,10 @@ nav {
 footer {
 
     text-align: center;
-    float: inline-end;
+    position:static;
     background-color: #191919;
     color: white;
+    width: 100%;
+    display:inline-block;
 }
 
