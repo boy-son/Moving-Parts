@@ -70,13 +70,20 @@
                                 <span class="icon is-small is-left">
                                     <i class="fa-sharp fa-solid fa-earth-americas"></i>
                                 </span>
+                                <div class="field">
+                                 <label class="label">Median Income</label>
+                                 <div class="control has-icons-left">
+                                  <input class="input" type="number" placeholder="Median Income">
+                                  <span class="icon is-small is-left">
+                                   <i class="fa-solid fa-money-bill"></i> 
+                                  </span>  
+                                 </div>   
+                                </div>
                                 <br>
-                                <input class="button" type="submit" value="Submit input">
-                                <div class="modal">
-                                    <div class="modal-background"></div>
-                                    <div class="modal-content">
-                                    </div>
-                                    <button class="modal-close is-large" aria-label="close"></button>
+                                <button class="income-trigger" data-target="income-modal">
+                                    Submit Zip Code
+                                  </button>
+                                  </div>
                                 </div>
                             </div>
                         </div>
@@ -90,8 +97,8 @@
                         </figure>
                         <br>
                         <form class="box">
-                            <p class="subtitle is-5">Rent Range for Zip Code</p>
-                            <p>And here you can calculate the Rent Range within a specific zip
+                            <p class="subtitle is-5">Average Rent for Zip Code</p>
+                            <p>And here you can calculate the Average Rent within a specific zip
                                 code. Wow!</p>
                             <br>
                             <div class="field">
@@ -99,16 +106,20 @@
                                 <div class="control has-icons-left">
                                     <input class="input" type="text" placeholder="Zip Code">
                                     <span class="icon is-small is-left">
-                                        <i class="fa-solid fa-house"></i>
+                                        <i class="fa-solid fa-truck-moving"></i>
                                     </span>
+                                    <div class="field">
+                                        <label class="label">Average Rent</label>
+                                        <div class="control has-icons-left">
+                                         <input class="input" type="number" placeholder="Average Rent">
+                                         <span class="icon is-small is-left">
+                                          <i class="fa-solid fa-house"></i> 
+                                         </span>  
+                                        </div>   
+                                       </div>
                                     <br>
-                                    <input class="button" type="submit" value="Submit input">
-                                    <div class="modal">
-                                        <div class="modal-background"></div>
-                                        <div class="modal-content">
-                                        </div>
-                                        <button class="modal-close is-large" aria-label="close"></button>
-                                    </div>
+                                    <input class="button" type="submit" value="Submit">
+                                      </div>
             </div>
         </div>
         </section>
