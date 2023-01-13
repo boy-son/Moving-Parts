@@ -74,14 +74,25 @@ function anotherFunction(data) {
 
 for (let index = 0; index < data.data.length; index++) {
 	
-	    var listBodyEl = $(".list-body")
+	    var listBodyEl = $("#list-body" + [index])
 	    var enuMeration = document.createElement("th")
 	    var jobTitle = document.createElement("td")
+        var jobLocale = document.createElement("td")
+        var jobType = document.createElement("td")
+        var jobLink = document.createElement("td")
+        
 	
-	    enuMeration.textContent = index+1
+	    enuMeration.textContent = index + 1
 	    jobTitle.textContent = data.data[index].job_title
-	    listBodyEl.append(enuMeration)
+        jobLocale.textContent = data.data[index].job_city
+        jobType.textContent = data.data[index].job_employment_type
+        jobLink.textContent = data.data[index].job_apply_link
+	    
+        listBodyEl.append(enuMeration)
 	    listBodyEl.append(jobTitle)
+        listBodyEl.append(jobLocale)
+        listBodyEl.append(jobType)
+        listBodyEl.append(jobLink)
 }
     
 
@@ -89,5 +100,6 @@ for (let index = 0; index < data.data.length; index++) {
 }
 
 $("#modal-button").on("click" , getJobsApi)
+
 
 
