@@ -46,13 +46,8 @@
 
 <body>
     <main>
-        <section>
-            <article>
-
-            </article>
-        </section>
-        <section>
-                <div class="income">
+        <section class="input-fields">
+            <div class="income">
                 <div class="image1">
                     <figure>
                         <img src="Assets/images/income.jpg" alt="Placeholder image">
@@ -71,66 +66,68 @@
                                     <i class="fa-sharp fa-solid fa-earth-americas"></i>
                                 </span>
                                 <div class="field">
-                                 <label class="label">Median Income</label>
-                                 <div class="control has-icons-left">
-                                  <input class="input" type="text" readonly="true" placeholder="Median Income" id="median">
-                                  <span class="icon is-small is-left">
-                                   <i class="fa-solid fa-money-bill"></i> 
-                                  </span>  
-                                 </div>   
+                                    <label class="label">Median Income</label>
+                                    <div class="control has-icons-left">
+                                        <input class="input" type="text" readonly="true" placeholder="Median Income"
+                                            id="median">
+                                        <span class="icon is-small is-left">
+                                            <i class="fa-solid fa-money-bill"></i>
+                                        </span>
+                                    </div>
                                 </div>
                                 <br>
                                 <button class="button is-primary" id="Income-Button" onclick=output()> Submit
-                                  </button>
-                                  </div>
-                                </div>
+                                </button>
                             </div>
                         </div>
-                    </form>
                 </div>
             </div>
-                    <div class="rent">
-                    <div class="image2">
-                        <figure>
-                            <img src="Assets/images/rental.jpeg" alt="Placeholder image">
-                        </figure>
-                        <br>
-                        <form class="box">
-                            <p class="subtitle is-5">Average Rent for Zip Code</p>
-                            <p>And here you can calculate the Average Rent within a specific zip
-                                code. Wow!</p>
-                            <br>
-                            <div class="field">
-                                <label class="label">Zip Code</label>
-                                <div class="control has-icons-left">
-                                    <input class="input" type="text" placeholder="Zip Code" id="zipCode2">
-                                    <span class="icon is-small is-left">
-                                        <i class="fa-solid fa-truck-moving"></i>
-                                    </span>
-                                    <div class="field">
-                                        <label class="label">Average Rent</label>
-                                        <div class="control has-icons-left">
-                                         <input class="input" type="text" readonly= true placeholder="Average Rent" id="avgRent">
-                                         <span class="icon is-small is-left">
-                                          <i class="fa-solid fa-house"></i> 
-                                         </span>  
-                                        </div>   
-                                       </div>
-                                    <br>
-                                    <input class="button" type="submit" value="Submit" id="RentButton">
-                                      </div>
+            </form>
             </div>
-        </div>
+            </div>
+            <div class="rent">
+                <div class="image2">
+                    <figure>
+                        <img src="Assets/images/rental.jpeg" alt="Placeholder image">
+                    </figure>
+                    <br>
+                    <form class="box">
+                        <p class="subtitle is-5">Average Rent for Zip Code</p>
+                        <p>And here you can calculate the Average Rent within a specific zip
+                            code. Wow!</p>
+                        <br>
+                        <div class="field">
+                            <label class="label">Zip Code</label>
+                            <div class="control has-icons-left">
+                                <input class="input" type="text" placeholder="Zip Code" id="zipCode2">
+                                <span class="icon is-small is-left">
+                                    <i class="fa-solid fa-truck-moving"></i>
+                                </span>
+                                <div class="field">
+                                    <label class="label">Average Rent</label>
+                                    <div class="control has-icons-left">
+                                        <input class="input" type="text" readonly=true placeholder="Average Rent"
+                                            id="avgRent">
+                                        <span class="icon is-small is-left">
+                                            <i class="fa-solid fa-house"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <br>
+                                <button class="button is-primary" type="submit" value="Submit" onclick=output()
+                                    id="RentButton"> Submit </button>
+                            </div>
+                        </div>
+                </div>
         </section>
         <section>
             <div class="line"></div>
-            
+
         </section>
     </main>
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="Assets/JS/income.js"></script>
-<!-- <script src="Assets/JS/income2.js"></script> -->
+<script src="Assets/JS/income2.js"></script>
 
 </html>
-<!-- class="has-ratio" width="128" height="128" -->

@@ -1,12 +1,28 @@
+html {
+background-color: beige;  
+}
+
+main {
+background-color: beige;
+color: beige;  
+}
+.input-fields {
+display: inline-block;
+align-items: center;
+background-color: beige;
+color: beige;
+}
+
 .rent {
-    flex: 0 0 200px;
+    flex: auto;
     background-color: #fff;
     display: flex;
     flex-wrap: wrap;
     justify-content: right;
+    bottom: 100px;
   }
   .income {
-    flex: 0 0 200px;
+    flex: auto;
     background-color: #fff;
     display: flex;
     flex-wrap: wrap;
@@ -43,10 +59,10 @@ width: 48%;
   }
 
   .line {
-        border-left: 6px solid black;
+        border-left: 3px solid black;
         height: 1000px;
         position: absolute;
-        left: 50%;
+        left: 48%;
         margin-left: 10px;
         top: 0;
         margin-top: 10%;
