@@ -1,5 +1,8 @@
-var ZipCode = document.querySelector('#input');
-var IncomeButton = document.querySelector('#income-trigger');
+var IncomeButton = document.getElementById('Income-Button');
+
+function getZipApi(event) {
+event.preventDefault();
+var zipCode = $("#zip-code").val()
 
 const options = {
 	method: 'GET',
@@ -9,48 +12,20 @@ const options = {
 	}
 };
 
-fetch('https://household-income-by-zip-code.p.rapidapi.com/v1/Census/HouseholdIncomeByZip/33884' , options)
+fetch('https://household-income-by-zip-code.p.rapidapi.com/v1/Census/HouseholdIncomeByZip' + zipCode , options)
 	.then(response => response.json())
-	.then(response => console.log(response))
+	.then(response => 
+		console.log(response),
+		output(response))
 	.catch(err => console.error(err));
+	
+}  
 
-    document.addEventListener('DOMContentLoaded', () => {
-        // Functions to open and close a modal
-        function openModal($el) {
-          $el.classList.add('is-active');
-        }
-      
-        function closeModal($el) {
-          $el.classList.remove('is-active');
-        }
-      
-        function closeAllModals() {
-          (document.querySelectorAll('.modal') || []).forEach(($modal) => {
-            closeModal($modal);
-          });
-        }
-      
-        
-        (document.querySelectorAll('.income-trigger') || []).forEach(($trigger) => {
-          const modal = $trigger.dataset.target;
-          const $target = document.getElementById(modal);
-      
-          $trigger.addEventListener('click', () => {
-            openModal($target);
-          });
-        });
-      
-        // Add a click event on various child elements to close the parent modal
-        (document.querySelectorAll('.modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button') || []).forEach(($close) => {
-          const $target = $close.closest('.modal');
-      
-          $close.addEventListener('click', () => {
-            closeModal($target);
-          });
-        });
-      
-        // Add a keyboard event to close all modals
-        document.addEventListener('keydown', (event) => {
-          const e = event || window.event;
-        });
-      });
+function output(data) {
+	console.log(data)
+	var median = document.getElementById('median');
+    median.textContent = data[index].medianIncome;
+    median.append(response) 
+}
+
+IncomeButton.addEventListener("submit", getZipApi)
