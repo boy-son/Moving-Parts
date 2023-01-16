@@ -19,7 +19,6 @@ color: beige;
     display: flex;
     flex-wrap: wrap;
     justify-content: right;
-    bottom: 100px;
   }
   .income {
     flex: auto;
@@ -62,7 +61,7 @@ width: 48%;
         border-left: 3px solid black;
         height: 1000px;
         position: absolute;
-        left: 48%;
+        left: 45%;
         margin-left: 10px;
         top: 0;
         margin-top: 10%;
