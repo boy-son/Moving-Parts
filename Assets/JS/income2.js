@@ -1,6 +1,8 @@
 var RentButton = document.getElementById('RentButton');
-function getRentAPI () {
-var zipCode2 = $("#zipCode2").val()
+
+function getRentAPI (event) {
+event.preventDefault();	
+var zipCode = $("#zipCode2").val()
 const options = {
 	method: 'GET',
 	headers: {
@@ -9,7 +11,7 @@ const options = {
 	}
 };
 
-fetch('https://realty-mole-property-api.p.rapidapi.com/zipCodes' + zipCode2, options)
+fetch('https://realty-mole-property-api.p.rapidapi.com/zipCodes/' + zipCode, options)
 	.then(response => response.json())
 	.then(response => {
 		console.log(response),
@@ -19,7 +21,7 @@ fetch('https://realty-mole-property-api.p.rapidapi.com/zipCodes' + zipCode2, opt
 
 function output(data) {
 	console.log(data);
-	var rent = document.getElementById('avgRent');
+    var rent = document.getElementById('avgRent');
     rent.value = data.rentalData.averageRent;
 }
 RentButton.addEventListener("click", getRentAPI)
