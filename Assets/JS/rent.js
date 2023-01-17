@@ -12,9 +12,35 @@ button.addEventListener("click", function () {
     
     fetch('https://zillow-com1.p.rapidapi.com/propertyExtendedSearch?location=' + text_value +  '&home_type=Houses', options)
         .then(response => response.json())
-        .then(response => console.log(response))
+        .then(response => {
+
+
+            console.log(response)
+            zillowInfo(response) 
+        })
         .catch(err => console.error(err));
 })
 
+function zillowInfo(data){
+
+    
+    for (let index = 0; index < data.props.length; index++) {
+	
+	var addressEl =document.getElementById('address')
+	    var listingTypeEl =document.getElementById('listingType')
+	    var statusTypeEl =document.getElementById('listingStatus')
+	    var propertyAd = document.createElement('li')
+	    var typeLi = document.createElement('li')
+	    var statusLi = document.createElement('li')
+	
+	    propertyAd.textContent = data.props[index].address
+	    typeLi.textContent = data.props[index].price
+	    statusLi.textContent = data.props[index].listingStatus
+	     
+	    addressEl.append(propertyAd)
+	    listingTypeEl.append(typeLi)
+	    statusTypeEl.append(statusLi)
+}
+}
 
 
