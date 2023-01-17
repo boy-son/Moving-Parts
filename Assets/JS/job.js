@@ -51,7 +51,7 @@ var searchResult = $("#city-name").val()
 const options = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': 'd008772996mshe87e44680e82ae0p13a9ddjsne94019017c96',
+		'X-RapidAPI-Key': 'c400d6ed29msh7a299688303bb82p1b23f8jsn813f909c3197',
 		'X-RapidAPI-Host': 'jsearch.p.rapidapi.com'
 	}
 };
