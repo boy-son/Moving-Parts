@@ -1,6 +1,7 @@
 var input = document.querySelector(".input")
 var button = document.querySelector(".button")
 button.addEventListener("click", function () {
+    var text_value= input.value
     const options = {
         method: 'GET',
         headers: {
@@ -8,10 +9,12 @@ button.addEventListener("click", function () {
             'X-RapidAPI-Host': 'zillow-com1.p.rapidapi.com'
         }
     };
-    var userzipcode = input.value
-    fetch('https://zillow-com1.p.rapidapi.com/propertyExtendedSearch?location=' + userzipcode + '&home_type=Houses', options)
+    
+    fetch('https://zillow-com1.p.rapidapi.com/propertyExtendedSearch?location=' + text_value +  '&home_type=Houses', options)
         .then(response => response.json())
         .then(response => console.log(response))
         .catch(err => console.error(err));
-
 })
+
+
+

@@ -6,7 +6,10 @@
     color: white;
     
 }
-
+.card{
+    max-width: 50%;
+    max-height: 200px;
+}
 #background-image1 {
 
 
@@ -116,5 +119,12 @@ footer {
     float: inline-end;
     background-color: #191919;
     color: white;
+}
+
+.zip{
+    width: 20%
+}
+.control{
+    margin-bottom: 3%;
 }
 
