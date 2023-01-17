@@ -1,16 +1,16 @@
 html {
-background-color: beige;  
+background-color: #191919;  
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 main {
-background-color: beige;
-color: beige;  
+background-color: #191919;
+color: #191919; 
 }
 .input-fields {
-display: inline-block;
 align-items: center;
-background-color: beige;
-color: beige;
+background-color: #191919;
+color: #191919;
 }
 
 .rent {
@@ -31,16 +31,17 @@ color: beige;
     padding: 20px;
   }
   
-  .p {
-    text-align: left;
+  .move {
+  color: white;
+  text-align: center; 
   }
-  
   .image1 {
     width: 48%;
+    display:block
   }
 
 .image2 {
-width: 48%;   
+width: 48%;  
 }
   .navbar {
  background-color: rgb(220, 254, 254);
@@ -61,8 +62,24 @@ width: 48%;
         border-left: 3px solid black;
         height: 1000px;
         position: absolute;
-        left: 45%;
+        left: 48%;
         margin-left: 10px;
         top: 0;
-        margin-top: 10%;
+        margin-top: 12%;
   }
+  span {
+
+    color:aqua;
+}
+h1 {
+   color: white; 
+  font-size: xx-large;
+  font-weight: bolder;
+  text-align: center;
+}
+h2 {
+  font-size: larger;
+  margin-bottom: 5px;
+  text-align:center;
+}
+
