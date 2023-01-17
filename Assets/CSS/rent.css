@@ -121,3 +121,33 @@ footer {
     margin-bottom: 3%;
 }
 
+
+#address li {
+
+    line-height: 100px;
+    font-size: smaller;
+    text-align: center;
+
+}
+
+#listingType li {
+
+
+    line-height: 100px;
+    font-size: smaller;
+    text-align: center;
+}
+
+#listingStatus li {
+
+    line-height: 100px;
+    font-size: smaller;
+    text-align: center;
+}
+
+#image li img {
+
+    height: 100px;
+    width: auto;
+}
+

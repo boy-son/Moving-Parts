@@ -25,19 +25,28 @@ function zillowInfo(data){
 
     
     for (let index = 0; index < data.props.length; index++) {
-	
+
+        propertyImageSrc = data.props[index].imgSrc
+        
+        var imageEl = document.getElementById('image')
+        var imageOutput = document.createElement('img')
+            imageOutput.setAttribute('src' , propertyImageSrc )
+
 	    var addressEl =document.getElementById('address')
 	    var listingTypeEl =document.getElementById('listingType')
 	    var statusTypeEl =document.getElementById('listingStatus')
+        var propertyLi = document.createElement('li')
 	    var propertyAd = document.createElement('li')
 	    var typeLi = document.createElement('li')
 	    var statusLi = document.createElement('li')
         
-        numberedLi = index+1
-	    propertyAd.textContent = data.props[index].address
-	    typeLi.textContent = data.props[index].price
+        
+        propertyAd.textContent = data.props[index].address
+	    typeLi.textContent = "$" + data.props[index].price
 	    statusLi.textContent = data.props[index].listingStatus
-	     
+	    
+        imageEl.append(propertyLi)
+        propertyLi.append(imageOutput)
 	    addressEl.append(propertyAd)
 	    listingTypeEl.append(typeLi)
 	    statusTypeEl.append(statusLi)
