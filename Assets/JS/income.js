@@ -24,8 +24,8 @@ fetch('https://household-income-by-zip-code.p.rapidapi.com/v1/Census/HouseholdIn
 function output(data) {
 	console.log(data)
 	var median = document.getElementById('median');
-   var putout = median.textContent = data[index].medianIncome;
+   var putout = median.textContent = data.medianIncome;
 	median.append(putout)
 }
 
-IncomeButton.addEventListener("submit", getZipApi)
+IncomeButton.addEventListener("click", getZipApi)
