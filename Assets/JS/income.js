@@ -12,20 +12,20 @@ const options = {
 	}
 };
 
-fetch('https://household-income-by-zip-code.p.rapidapi.com/v1/Census/HouseholdIncomeByZip' + zipCode , options)
+fetch('https://household-income-by-zip-code.p.rapidapi.com/v1/Census/HouseholdIncomeByZip/' + zipCode , options)
 	.then(response => response.json())
-	.then(response => 
+	.then(response => {
 		console.log(response),
-		output(response))
+		output2(response)})
 	.catch(err => console.error(err));
 	
 }  
 
-function output(data) {
-	console.log(data)
+function output2(data) {
+	console.log(data);
 	var median = document.getElementById('median');
-   var putout = median.textContent = data.medianIncome;
-	median.append(putout)
+    median.value = data.medianIncome;
+	
 }
 
 IncomeButton.addEventListener("click", getZipApi)
