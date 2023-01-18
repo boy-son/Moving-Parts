@@ -8,24 +8,26 @@ background-color: #191919;
 color: #191919; 
 }
 .input-fields {
-align-items: center;
 background-color: #191919;
 color: #191919;
+display:flex;
 }
 
-.rent {
-    flex: auto;
-    background-color: #fff;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: right;
-  }
   .income {
-    flex: auto;
     background-color: #fff;
-    display: flex;
-    flex-wrap: wrap;
+    display:flex;
+    flex-wrap: wrap-reverse;
     justify-content: left;
+    width:70%;
+    height:74%;
+}
+.rent {
+  background-color: #fff;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: right;
+  width:62%;
+  height:62%
 }
  .title {
     padding: 20px;
@@ -35,14 +37,7 @@ color: #191919;
   color: white;
   text-align: center; 
   }
-  .image1 {
-    width: 48%;
-    display:block
-  }
-
-.image2 {
-width: 48%;  
-}
+ 
   .navbar {
  background-color: rgb(220, 254, 254);
   }
@@ -58,15 +53,6 @@ width: 48%;
   background-color:darkgray;  
   }
 
-  .line {
-        border-left: 3px solid black;
-        height: 1000px;
-        position: absolute;
-        left: 48%;
-        margin-left: 10px;
-        top: 0;
-        margin-top: 12%;
-  }
   span {
 
     color:aqua;
@@ -82,4 +68,18 @@ h2 {
   margin-bottom: 5px;
   text-align:center;
 }
-
+.pageName {
+font-size: xx-large;
+text-align: left;
+color: white;  
+}
+.label {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  float: left;
+  width:: 30%;
+}
+input {
+margin-top: 0;
+padding-top: 0;  
+}
