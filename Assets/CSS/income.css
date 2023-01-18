@@ -11,6 +11,7 @@ color: #191919;
 background-color: #191919;
 color: #191919;
 display:flex;
+border-radius: 15px;
 }
 
   .income {
@@ -82,4 +83,9 @@ color: white;
 input {
 margin-top: 0;
 padding-top: 0;  
+}
+
+img {
+height: 500px;
+width: auto;
 }
