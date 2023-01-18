@@ -3,7 +3,8 @@
     padding: 0;
     margin: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: lightseagreen;
+    background-color: #191919;
+    color: white;
     
     
 }
@@ -16,6 +17,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: white;
     
 
 }
@@ -23,7 +25,7 @@
 .js-modal-trigger {
 
     border-radius: 10%;
-    border: black solid 2px;
+    border: white solid 2px;
     
 }
 
@@ -45,6 +47,8 @@
 
 }
 
+
+
 span {
 
     color: aqua;
@@ -59,7 +63,8 @@ span {
 
 table {
 
-    color:black;
+    color:white;
+    background-color: #191919;
     font-style: normal;
     font-size: 90%;
     text-decoration: none;
