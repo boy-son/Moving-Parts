@@ -11,10 +11,14 @@ This website was built using HTML, CSS, Bulma, Jquery, Javascript, and FontAweso
 The biggest challenge for this project was implementing the API's and having them output to our page correctly, as well as fine-tuning our CSS to ensure that everything is formatted correctly on the page. We had trouble specifically with the job search and income/rent estimator api's but managed to fix them with a for loop and an event.preventDefault() respectively.
 
 ## Project Screenshots
-![Home Page](Assets/images/homepage.png)
-![Income/Rent](Assets/images/incomerent.png)
-![Job Search](Assets/images/job.png)
-![Home Sales](Assets/images/homesale.png)
+### Home Page
+![Home Page](Assets/Images/homepage.png)
+### Income/Rent Estimator
+![Income/Rent](Assets/Images/incomerent.png)
+### Job Search
+![Job Search](Assets/Images/job.png)
+### Home Sales
+![Home Sales](Assets/Images/homesale.png)
 
 ## Deployed Application
 
@@ -27,5 +31,5 @@ The biggest challenge for this project was implementing the API's and having the
 
 
 
-
-This project was created by Quentin Jones, Tommy Santos and Branden Wheat
+## Credits
+This project was created by Quentin Jones, Tommy Santos, Seth Swindell and Branden Wheat
