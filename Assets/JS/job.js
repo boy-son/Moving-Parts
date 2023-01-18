@@ -103,12 +103,7 @@ for (let index = 0; index < data.data.length; index++) {
         listBodyEl.append(jobLink)
         jobLink.append(jobLinkEl)
 
-        // localStorage.setItem(index, index+1)
-        // localStorage.setItem(index, data.data[index].job_title)
-        // localStorage.setItem(index, data.data[index].job_city)
-        // localStorage.setItem(index, data.data[index].job_employment_type)
-        // localStorage.setItem(index, data.data[index].job_apply_link)
-        
+      
 
 }
     
