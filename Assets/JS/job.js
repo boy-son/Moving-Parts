@@ -73,26 +73,43 @@ function anotherFunction(data) {
     console.log(data)
 
 for (let index = 0; index < data.data.length; index++) {
-	
-	    var listBodyEl = $("#list-body" + [index])
-	    var enuMeration = document.createElement("th")
-	    var jobTitle = document.createElement("td")
+
+        var aTagHref = data.data[index].job_apply_link
+  
+	      var listBodyEl = $("#list-body" + [index])
+	      var enuMeration = document.createElement("th")
+	      var jobTitle = document.createElement("td")
         var jobLocale = document.createElement("td")
         var jobType = document.createElement("td")
+        
+        var jobLinkEl = document.createElement("a")
+          jobLinkEl.setAttribute('href' , aTagHref)
+
+
         var jobLink = document.createElement("td")
         
 	
-	    enuMeration.textContent = index + 1
-	    jobTitle.textContent = data.data[index].job_title
+	      enuMeration.textContent = index + 1
+	      jobTitle.textContent = data.data[index].job_title
         jobLocale.textContent = data.data[index].job_city
         jobType.textContent = data.data[index].job_employment_type
-        jobLink.textContent = data.data[index].job_apply_link
+        jobLinkEl.textContent = data.data[index].job_apply_link
 	    
         listBodyEl.append(enuMeration)
-	    listBodyEl.append(jobTitle)
+	      listBodyEl.append(jobTitle)
         listBodyEl.append(jobLocale)
         listBodyEl.append(jobType)
+
         listBodyEl.append(jobLink)
+        jobLink.append(jobLinkEl)
+
+        // localStorage.setItem(index, index+1)
+        // localStorage.setItem(index, data.data[index].job_title)
+        // localStorage.setItem(index, data.data[index].job_city)
+        // localStorage.setItem(index, data.data[index].job_employment_type)
+        // localStorage.setItem(index, data.data[index].job_apply_link)
+        
+
 }
     
 

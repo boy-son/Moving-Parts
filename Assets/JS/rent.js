@@ -32,9 +32,9 @@ function zillowInfo(data){
         var imageOutput = document.createElement('img')
             imageOutput.setAttribute('src' , propertyImageSrc )
 
-	    var addressEl =document.getElementById('address')
-	    var listingTypeEl =document.getElementById('listingType')
-	    var statusTypeEl =document.getElementById('listingStatus')
+	    var addressEl = document.getElementById('address')
+	    var listingTypeEl = document.getElementById('listingType')
+	    var statusTypeEl = document.getElementById('listingStatus')
         var propertyLi = document.createElement('li')
 	    var propertyAd = document.createElement('li')
 	    var typeLi = document.createElement('li')
