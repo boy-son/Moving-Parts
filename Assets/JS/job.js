@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Add a click event on various child elements to close the parent modal
-  (document.querySelectorAll('.modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button') || []).forEach(($close) => {
+  (document.querySelectorAll('.modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button, #modal-button') || []).forEach(($close) => {
     const $target = $close.closest('.modal');
 
     $close.addEventListener('click', () => {
@@ -51,7 +51,7 @@ var searchResult = $("#city-name").val()
 const options = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': 'd008772996mshe87e44680e82ae0p13a9ddjsne94019017c96',
+		'X-RapidAPI-Key': '21c44ebdd0msh0a52df70ab97ecep1d5766jsnec783fd7f66e',
 		'X-RapidAPI-Host': 'jsearch.p.rapidapi.com'
 	}
 };
@@ -69,37 +69,60 @@ fetch('https://jsearch.p.rapidapi.com/search?query=' + searchResult + '&num_page
 
 }
 
-function anotherFunction(data) {
-    console.log(data)
 
-for (let index = 0; index < data.data.length; index++) {
-	
-	    var listBodyEl = $("#list-body" + [index])
-	    var enuMeration = document.createElement("th")
-	    var jobTitle = document.createElement("td")
-        var jobLocale = document.createElement("td")
-        var jobType = document.createElement("td")
-        var jobLink = document.createElement("td")
+function anotherFunction(data) {
+  console.log(data)
+
+  $("tbody").children().empty()
+  $(".modal-content input").val("")
+
+  for (let index = 0; index < data.data.length; index++) {
+
+    var aTagHref = data.data[index].job_apply_link
+  
+	  var listBodyEl = $("#list-body" + [index])
+	  var enuMeration = document.createElement("th")
+	  var jobTitle = document.createElement("td")
+    var jobLocale = document.createElement("td")
+    var jobType = document.createElement("td")
+        
+    var jobLinkEl = document.createElement("a")
+    jobLinkEl.setAttribute('href' , aTagHref)
+
+
+    var jobLink = document.createElement("td")
         
 	
-	    enuMeration.textContent = index + 1
-	    jobTitle.textContent = data.data[index].job_title
-        jobLocale.textContent = data.data[index].job_city
-        jobType.textContent = data.data[index].job_employment_type
-        jobLink.textContent = data.data[index].job_apply_link
+	  enuMeration.textContent = index + 1
+	  jobTitle.textContent = data.data[index].job_title
+    jobLocale.textContent = data.data[index].job_city
+    jobType.textContent = data.data[index].job_employment_type
+    jobLinkEl.textContent = data.data[index].job_apply_link
 	    
-        listBodyEl.append(enuMeration)
-	    listBodyEl.append(jobTitle)
-        listBodyEl.append(jobLocale)
-        listBodyEl.append(jobType)
-        listBodyEl.append(jobLink)
-}
+    listBodyEl.append(enuMeration)
+	  listBodyEl.append(jobTitle)
+    listBodyEl.append(jobLocale)
+    listBodyEl.append(jobType)
+
+    listBodyEl.append(jobLink)
+    jobLink.append(jobLinkEl)
+
+     
+
+  }
     
-
+  
 
 }
 
-$("#modal-button").on("click" , getJobsApi)
+
+
+$("#modal-button").click( function() {
+
+  getJobsApi()
+
+  
+})
 
 
 

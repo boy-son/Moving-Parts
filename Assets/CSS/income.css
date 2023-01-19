@@ -1,47 +1,44 @@
 html {
-background-color: beige;  
+background-color: #191919;  
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 main {
-background-color: beige;
-color: beige;  
+background-color: #191919;
+color: #191919; 
 }
 .input-fields {
-display: inline-block;
-align-items: center;
-background-color: beige;
-color: beige;
+background-color: #191919;
+color: #191919;
+display:flex;
+border-radius: 15px;
 }
 
-.rent {
-    flex: auto;
-    background-color: #fff;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: right;
-  }
   .income {
-    flex: auto;
     background-color: #fff;
-    display: flex;
-    flex-wrap: wrap;
+    display:flex;
+    flex-wrap: wrap-reverse;
     justify-content: left;
+    width:70%;
+    height:74%;
+}
+.rent {
+  background-color: #fff;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: right;
+  width:62%;
+  height:62%
 }
  .title {
     padding: 20px;
   }
   
-  .p {
-    text-align: left;
+  .move {
+  color: white;
+  text-align: center; 
   }
-  
-  .image1 {
-    width: 48%;
-  }
-
-.image2 {
-width: 48%;   
-}
+ 
   .navbar {
  background-color: rgb(220, 254, 254);
   }
@@ -57,12 +54,38 @@ width: 48%;
   background-color:darkgray;  
   }
 
-  .line {
-        border-left: 3px solid black;
-        height: 1000px;
-        position: absolute;
-        left: 45%;
-        margin-left: 10px;
-        top: 0;
-        margin-top: 10%;
-  }
+  span {
+
+    color:aqua;
+}
+h1 {
+   color: white; 
+  font-size: xx-large;
+  font-weight: bolder;
+  text-align: center;
+}
+h2 {
+  font-size: larger;
+  margin-bottom: 5px;
+  text-align:center;
+}
+.pageName {
+font-size: xx-large;
+text-align: left;
+color: white;  
+}
+.label {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  float: left;
+  width: 30%;
+}
+input {
+margin-top: 0;
+padding-top: 0;  
+}
+
+img {
+height: 500px;
+width: auto;
+}
